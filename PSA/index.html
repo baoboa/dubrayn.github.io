@@ -183,6 +183,38 @@ To view these slides **locally** with `firefox`:
 .hcenter[:arrow_right: **final presentation**]
 ]
 ]
+
+---
+
+# Project
+
+## Main objective
+:arrow_right: **write and use a 2D-FD solver for the time-dependent non-relativistic Schrödinger equation**
+
+## Details
+* write the solver in a mix of Python and `C++` with Armadillo
+* visualize the time-evolution of a wave packet with Paraview or a custom VTK program
+* get some real-time monitoring information of a run using an API
+* implement an automatic restart mechanism
+* store the results in a mongoDB database
+* calculate some special physical cases (diffraction, tunneling effect, HO solutions, etc...)
+* use `git`, `doxygen`, `make`, `cxxtest`, `swig`, `remark.js`, `VTK`
+
+
+TODO: add animation
+
+---
+
+# Project - formalism
+
+## Time-dependent Schrödinger equation
+`$$i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = \left(\frac{\hat{\mathbf{p}}^2}{2m} + \hat{V}(\mathbf{r}, t)\right)|\psi(t)\rangle$$`
+where
+* `\(\hbar\)` is the **reduced Planck constant**
+* `\(i\)` is the imaginary unit (`\(i^2=-1\)`)
+* `\(\hat{H}\equiv \frac{\hat{\mathbf{p}}^2}{2m} + \hat{V}(\mathbf{r}, t)\)` is the **Hamiltonian operator** of the quantum system
+* `\(|\psi(t)\rangle\)` is the **wave function** of the quantum system
+
     </textarea>
 
     <script src="core/javascript/remark.js"></script>
