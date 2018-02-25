@@ -84,9 +84,11 @@ body {
   overflow: hidden;
 }
 
+/*
 .remark-slide-content pre {
   width: 100%;
 }
+*/
 
 .remark-slide-content * {
   flex: 0 0 auto;
@@ -207,6 +209,7 @@ em {
   margin: 0 0.3em 0 0;
 }
 
+.wauto { display: inline-flex; }
 .w05 { width: 05%; }
 .w10 { width: 10%; }
 .w15 { width: 15%; }
